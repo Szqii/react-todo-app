@@ -2,7 +2,7 @@ import { useTodoContext } from "../../contexts/todo.context";
 import "./todo-filter.styles.scss";
 
 const TodoFilter = () => {
-  const { filter, setFilter } = useTodoContext();
+  const { setFilter } = useTodoContext();
 
   const handleFilterChange = async (e) => {
     await setFilter(e.target.innerText.toLowerCase());

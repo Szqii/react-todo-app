@@ -3,7 +3,7 @@ import { useState } from "react";
 import { useTodoContext } from "../../contexts/todo.context";
 
 const TodoInput = () => {
-  const { todoList, setTodoList, addTodo, toggleAllTodo } = useTodoContext();
+  const { todoList, addTodo, toggleAllTodo } = useTodoContext();
   const [todoItemText, setTodoItemText] = useState("");
 
   const handleAdd = (e) => {
