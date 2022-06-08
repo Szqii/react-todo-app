@@ -1,0 +1,31 @@
+.todo-filter-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-top: 10px;
+
+  .todo-filter-button {
+    margin: 0 5px;
+    width: 120px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1e5128;
+    color: #f3f3f3;
+    letter-spacing: 1.3px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      background-color: #4e9f3d;
+      transform: scale(1.05);
+    }
+
+    &.active {
+      background-color: #4e9f3d;
+    }
+  }
+}
